@@ -40,7 +40,7 @@ const ContactSection = ({ isDark }) => {
             </div>
             <div className={`flex items-center text-lg ${isDark ? "text-gray-300" : "text-gray-800"}`}>
               <FaPhone className="mr-4 text-blue-500 text-2xl" />
-              <a href="tel:+923334567890" className="hover:text-blue-600 transition-colors">+92 333 4567890</a>
+              <a href="tel:+923334567890" className="hover:text-blue-600 transition-colors">+92 315 7631687</a>
             </div>
             <div className={`flex items-center text-lg ${isDark ? "text-gray-300" : "text-gray-800"}`}>
               <FaMapMarkerAlt className="mr-4 text-blue-500 text-2xl" />
