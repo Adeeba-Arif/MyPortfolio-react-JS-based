@@ -38,10 +38,10 @@ const ContactSection = ({ isDark }) => {
               <FaEnvelope className="mr-4 text-blue-500 text-2xl" />
               <a href="mailto:adeebaarif@gmail.com" className="hover:text-blue-600 transition-colors">adeebaarif@gmail.com</a>
             </div>
-            <div className={`flex items-center text-lg ${isDark ? "text-gray-300" : "text-gray-800"}`}>
+            {/* <div className={`flex items-center text-lg ${isDark ? "text-gray-300" : "text-gray-800"}`}>
               <FaPhone className="mr-4 text-blue-500 text-2xl" />
               <a href="tel:+923334567890" className="hover:text-blue-600 transition-colors">+92 315 7631687</a>
-            </div>
+            </div> */}
             <div className={`flex items-center text-lg ${isDark ? "text-gray-300" : "text-gray-800"}`}>
               <FaMapMarkerAlt className="mr-4 text-blue-500 text-2xl" />
               Rawalpindi, Pakistan
@@ -79,9 +79,9 @@ const ContactSection = ({ isDark }) => {
           viewport={{ once: true }}
         >
           <form className={`p-8 rounded-xl shadow-2xl flex flex-col gap-6 transition-colors duration-300 ${isDark ? "bg-gray-900 border-gray-700" : "bg-white border border-gray-200"}`}>
-            <input type="text" placeholder="Your Name" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-white border-gray-600" : "border-gray-300 text-gray-800"}`} />
-            <input type="email" placeholder="Your Email" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-white border-gray-600" : "border-gray-300 text-gray-800"}`} />
-            <textarea rows="6" placeholder="Your Message" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-white border-gray-600" : "border-gray-300 text-gray-800"}`} />
+            <input type="text" placeholder="Your Name" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-gray-300 border-gray-600" : "border-gray-300 text-gray-800"}`} />
+            <input type="email" placeholder="Your Email" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-gray-300 border-gray-600" : "border-gray-300 text-gray-800"}`} />
+            <textarea rows="6" placeholder="Your Message" className={`p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isDark ? "bg-gray-700 text-gray-300 border-gray-600" : "border-gray-300 text-gray-800"}`} />
             <motion.button
               type="submit"
               className="bg-blue-600 text-white py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors"

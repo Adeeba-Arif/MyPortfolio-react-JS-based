@@ -1,6 +1,7 @@
 // src/components/ResumeSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import myCertificate from "../assets/Adeeba Arif.png"
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 
 const resumeFadeIn = {
@@ -69,6 +70,24 @@ const ResumeSection = ({ isDark }) => {
               <p className={`${isDark ? "text-gray-300" : "text-gray-700"} text-md`}>SMIT Peshawar</p>
             </motion.div>
           </div>
+          {/* Devspire Certificate */}
+          <motion.div
+              className="relative pl-8 border-l-2 border-blue-500"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <span className="absolute left-[-8px] top-0 w-4 h-4 bg-blue-500 rounded-full"></span>
+              <p className={`text-lg font-semibold mb-2 ${isDark ? "text-white" : "text-gray-900"}`}>Devspire Certificate</p>
+              <img
+                src= {myCertificate}
+                alt="Devspire Web Development Certificate"
+                title="Devspire Web Development Certificate"
+                className="w-full h-auto rounded-lg shadow-md mt-2"
+                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/400x250/cccccc/ffffff?text=Image+Not+Found"; }}
+              />
+            </motion.div>
         </motion.div>
 
         {/* Experience Section */}
